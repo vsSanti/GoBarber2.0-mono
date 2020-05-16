@@ -93,7 +93,7 @@ dist/
 .storybook-out
 
 # vuepress build output
-.vuepress/dist
+.vuepress/dis
 
 # Serverless directories
 .serverless/
