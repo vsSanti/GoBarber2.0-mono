@@ -15,6 +15,7 @@ describe('ListProviderMonthAvailability', () => {
   it('should be able to list month availability from provider', async () => {
     await fakeAppointmentsRepository.create({
       provider_id: 'user',
+      customer_id: 'asdasd',
       date: new Date(2020, 3, 17, 8, 0, 0),
     });
 
@@ -22,6 +23,7 @@ describe('ListProviderMonthAvailability', () => {
       Array.from({ length: 10 }, (_, index) => {
         return fakeAppointmentsRepository.create({
           provider_id: 'user',
+          customer_id: 'asdasd',
           date: new Date(2020, 4, 17, index + 8, 0, 0),
         });
       }),
@@ -29,6 +31,7 @@ describe('ListProviderMonthAvailability', () => {
 
     await fakeAppointmentsRepository.create({
       provider_id: 'user',
+      customer_id: 'asdasd',
       date: new Date(2020, 4, 18, 9, 0, 0),
     });
 
